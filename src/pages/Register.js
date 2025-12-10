@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 function Register() {
   const [form, setForm] = useState({ username: '', email: '', password: '', referralCode: '' });
   const [message, setMessage] = useState('');
+    const API_URL = process.env.REACT_APP_API_URL;  // ⬅️ هنا نقرأ env
   const location = useLocation();
    const { t } = useTranslation();
 
@@ -20,7 +21,7 @@ function Register() {
     e.preventDefault();
     setMessage('');
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form);
+      const res = await axios.post(`${API_URL}/api/auth/register`, form);
       setMessage(res.data.message || t("register.success_message"));
     } catch (err) {
       setMessage(err?.response?.data?.message || t("register.error_message"));
