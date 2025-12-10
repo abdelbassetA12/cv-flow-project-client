@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0; /* يشتغل RTL / LTR */
+  height: 100vh;
+  width: 240px;
+  background-color: #f5f6fa;
+  border-inline-end: 1px solid #e0e0e0; /* بدل border-left */
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  z-index: 99;
+}
+
+
+
+
+
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar-top .toggle-container {
+  
+  padding: 0 12px;
+  
+}
+
+
+
+ .toggle-btn {
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  margin: 0 12px 20px auto;
+ 
+  color: #555;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #e1efff;
+  color: #007bff;
+}
+
+.sidebar.collapsed .sidebar-link span {
+  display: none;
+}
+
+.sidebar.collapsed .toggle-btn {
+  margin: 0 auto 20px auto;
+}
+
+
+
+
+/* ✅ الحاوية الرئيسية للمحتوى */
+.main-content {
+  flex-grow: 1;
+  transition: margin-inline-start 0.3s ease; /* بدل margin-left */
+  margin-inline-start: 240px; /* يتأقلم مع RTL */
+}
+
+
+
+.main-content.collapsed {
+  margin-inline-start: 70px;
+}
+
+.main-content.full {
+  margin-inline-start: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+

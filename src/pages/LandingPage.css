@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  
+ 
+  
+}
+
+
+
+
+/* === التصميم العام === */
+body {
+  margin: 0;
+  padding: 0;
+    font-family: "Tajawal", sans-serif;
+
+   
+  overflow-x: hidden;
+   width: 100vw;
+}
+
+/* كل الأقسام */
+section {
+  
+  box-sizing: border-box;
+}
+
+/* === الأزرار === */
+button {
+  transition: all 0.3s ease;
+ 
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.scrollBtnStyleLeft  {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+   transition: none !important;
+}
+
+.scrollBtnStyleRight {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ccc;
+   color: #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+   transition: none;
+}
+
+
+
+/* ضع هذا في نهاية ملف CSS بعد كل القواعد الأخرى */
+button.scrollBtnStyleLeft,
+button.scrollBtnStyleRight {
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+}
+
+/* تأكيد منع التأثير على hover / active / focus */
+button.scrollBtnStyleLeft:hover,
+button.scrollBtnStyleRight:hover,
+button.scrollBtnStyleLeft:active,
+button.scrollBtnStyleRight:active,
+button.scrollBtnStyleLeft:focus,
+button.scrollBtnStyleRight:focus {
+  transform: none !important;
+  -webkit-transform: none !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+}
+
+
+/* === الفيديو والقسم الأول === */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  p {
+    font-size: 1.05rem !important;
+  }
+}
+
+/* === للأجهزة اللوحية (tablet) === */
+@media (max-width: 768px) {
+  .scrollBtnStyleLeft,
+.scrollBtnStyleRight {
+  width: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+  
+
+  h1, h2 {
+    font-size: 2rem !important;
+    text-align: center !important;
+
+
+
+    
+  }
+
+  .team-card {
+    width: 160px !important;
+  }
+
+  video {
+      width: 100% !important;
+    height: auto !important;
+  }
+
+  .pricing-section,
+  .referral-section,
+  .why-section {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .why-section img,
+  .referral-section img {
+    max-width: 90% !important;
+  }
+}
+
+/* === للهواتف (mobile) === */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+ button {
+  
+    font-size: 1rem;
+    padding: 10px 16px !important;
+  }
+ .scrollBtnStyleLeft,
+.scrollBtnStyleRight {
+  width: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+ 
+
+  
+
+  .team-card {
+    width: 100% !important;
+    max-width: 280px;
+  }
+
+  #card-row {
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+  }
+
+  footer {
+    padding: 2rem 1rem !important;
+  }
+
+  footer > div {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  footer h4 {
+    font-size: 1rem !important;
+  }
+
+  footer a {
+    font-size: 0.9rem !important;
+  }
+}

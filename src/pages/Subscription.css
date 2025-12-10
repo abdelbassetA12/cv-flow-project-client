@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+.sub-cart {
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+/* تأكد من أن الصفحة لا تحتوي على overflow مخفي */
+.subscription-page {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 0 !important;
+ 
+}
+
+/* تحسين العرض في الجوال */
+@media (max-width: 768px) {
+  .sub-cart {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .subscription-page {
+    padding-top: 0 !important;
+    
+  }
+}

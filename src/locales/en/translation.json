@@ -1,0 +1,997 @@
+
+
+
+
+
+{
+
+
+   "about": {
+  "about_hero_title": "About CVFlow",
+  "about_hero_text": "We help people around the world build professional CVs that open new doors for their careers.",
+  "about_hero_button": "Start for Free",
+
+  "about_story_title": "Our Story",
+  "about_story_text": "CVFlow was born with a simple mission: to make creating resumes easy, elegant, and accessible for everyone.",
+
+  "about_vision_title": "Our Vision",
+  "about_vision_text": "To become the global leader in resume design, helping millions of professionals showcase their skills effectively.",
+
+  "about_mission_title": "Our Mission",
+  "about_mission_text": "Provide simple, modern, and customizable CV templates to empower people to achieve their career dreams.",
+
+  "about_values_title": "Our Values",
+  "about_values_simplicity": "Simplicity – Easy to use tools",
+  "about_values_creativity": "Creativity – Elegant designs",
+  "about_values_trust": "Trust – Reliable service",
+  "about_values_growth": "Growth – Achieve goals faster",
+
+  "about_team_title": "Meet Our Team",
+  "about_team_founder": "Founder & CEO",
+
+  "about_testimonials_title": "What Our Users Say",
+  "about_testimonial_1": "Thanks to CVFlow, I landed my dream job in just 2 weeks. The templates are amazing!",
+  "about_testimonial_1_author": "- Sarah, Marketing Specialist",
+  "about_testimonial_2": "As a freelancer, I now design CVs for clients easily and earn a steady income. Highly recommended!",
+  "about_testimonial_2_author": "- Ahmed, Freelancer",
+
+  "about_cta_title": "Ready to create your professional CV?",
+  "about_cta_button": "Start Now for Free"
+},
+
+
+
+
+
+
+
+
+ "checkout": {
+  "checkout_title": "Complete the plan subscription",
+  "checkout_summary_title": "Subscription Summary",
+  "checkout_plan_label": "Plan",
+  "checkout_price_label": "Price",
+  "checkout_month_span": "month",
+  "checkout_choose_payment": "Choose a payment method",
+  "checkout_bank_transfer_button": "Bank transfer (CIH Bank)",
+  "checkout_bank_transfer_title": "Bank transfer instructions",
+  "checkout_bank_transfer_text": "Transfer the amount to the account below and then upload a photo of the transfer to activate your subscription.",
+  "checkout_bank_name": "CIH Bank",
+  "checkout_account_holder": "Account Holder Name",
+  "checkout_account_number": "Account Number",
+  "checkout_rib": "RIB",
+  "checkout_iban": "IBAN",
+  "checkout_upload_label": "Upload transfer receipt",
+  "checkout_upload_success": "Image uploaded successfully",
+  "checkout_review_note": "The subscription will be activated after the transfer is reviewed by the administration.",
+  "checkout_paypal_error": "An error occurred while processing PayPal payment.",
+  "checkout_no_plan_error": "No correct plan has been determined.",
+  "checkout_payment_success": "✅ Subscription successful for plan: ",
+  "checkout_payment_fail": "❌ Payment failed",
+  "checkout_payment_error": "An error occurred during payment",
+  "checkout_bank_transfer_success": "Your transfer image has been sent successfully! It will be reviewed by the administration soon.",
+  "checkout_bank_transfer_fail": "Failed to send transfer : {{reason}}",
+  "checkout_bank_unknown_error": "Unknown error"
+},
+
+
+
+"contact": {
+    "inquiry_title": "Send an inquiry",
+    "inquiry_name_placeholder": "Your Name",
+    "inquiry_email_placeholder": "Your Email",
+    "inquiry_message_placeholder": "Write your inquiry here...",
+    "inquiry_button": "Send inquiry",
+    "inquiry_success": "Inquiry sent",
+    "inquiry_error": "An error occurred: {{error}}",
+
+    "feedback_title": "Send a note",
+    "feedback_name_placeholder": "Your Name",
+    "feedback_email_placeholder": "Your Email",
+    "feedback_message_placeholder": "Write your comment here...",
+    "feedback_rate_text": "Rate the site by clicking on the number of stars according to your satisfaction with the site",
+    "feedback_button": "Send feedback and evaluation",
+    "feedback_success": "Note sent with evaluation",
+    "feedback_error": "An error occurred: {{error}}",
+    "feedback_required": "All fields are required, including rating.",
+
+    "rating_bad": "Bad",
+    "rating_poor": "Poor",
+    "rating_good": "Good",
+    "rating_very_good": "Very Good",
+    "rating_excellent": "Excellent",
+    "rating_texts": ["Bad", "Poor", "Good", "Very Good", "Excellent"]
+  },
+
+  "favorites": {
+  "title": "My favorite templates",
+ 
+  "remove_error": "Failed to remove template from favorites",
+  "fetch_error": "Failed to fetch favorites",
+  "favorites_yet":"There are no favorites yet."  ,
+   "success_remove": "   Removed from favorites "
+},
+
+"forgot_password": {
+  "title": "Password recovery",
+  "instruction": "Please enter your email address.",
+  "placeholder": "example@email.com",
+  "button": "Send reset link",
+  "success": "A password reset link has been sent to your email.",
+  "error": "An error occurred, please try again later."
+},
+
+
+
+  "freelanceGuide": {
+    "title": "How to start your freelance business creating resumes for clients?",
+    "subtitle": "A practical guide to starting your freelance project with clear and simple steps",
+
+    "idea_title": " Project idea",
+    "idea_text": "You can offer CV creation services to job seekers or those looking to update their CVs, using our professional, ready-made templates. Then, deliver them in PDF format with an attractive, organized design for a fee.",
+
+    "steps_title": " Getting started steps",
+    "steps_list": [
+      "Register on our platform to create a free account.",
+      "Browse the templates and choose the most suitable one for each client based on their specialty.",
+      "Ask the client for his professional, educational and skills data.",
+      "Easily fill out the template with the editing tool.",
+      "Download your CV as a high-quality PDF file.",
+      "Deliver it to the customer via WhatsApp or email after receiving the money."
+    ],
+
+    "pricing_title": " How do you price your service?",
+    
+    
+  "pricing_text": "You can set the service price based on your experience and professional formatting. Initially, it's recommended to price the service between <strong>5 - 15 $</strong> per resume, depending on the complexity of the design and the time required.",
+
+
+
+    "where_title": " Where do you offer your service?",
+    "where_list": [
+      "Facebook groups for employment and job seekers.",
+      "Instagram by posting professional CV templates of your own design.",
+      "WhatsApp via contacts or professional groups.",
+      "Freelancing platforms such as Khamsat or Mostaqil."
+    ],
+
+    "cta_button": "Start now for free"
+  },
+
+
+
+
+
+
+ 
+ 
+  "home": {
+    "title": "Choose a CV template",
+    "subscription": {
+      "premium": "Your current subscription: {{plan}}",
+      "free": "You are using the free plan (basic). Some templates may be limited. - <link>Click here to upgrade</link>",
+      "guest": "Please log in to view templates or subscribe.",
+      "lodin": "⏳ Loading templates...",
+      "no-template": "No templates are available."
+    },
+    "toast": {
+      "favorite_added": "The template has been saved as a favorite successfully.❤️",
+      "favorite_failed": "Failed to update favorites list",
+       "favorite_info": "   Removed from favorites   "
+    }
+  },
+
+
+
+  "howto": {
+  "title": "Welcome! Learn how to use our website.🌟",
+  "cta": "Start for Free 🚀",
+  "steps": {
+    "create_account": {
+      "title": "Create an account",
+      "description": "Create your account via email or phone number easily and quickly."
+    },
+    "choose_template": {
+      "title": "Choose a template or service",
+      "description": "Browse through the various templates and services and choose the one that suits you best."
+    },
+    "customize_start": {
+      "title": "Customize and start",
+      "description": "Easily modify the template to suit your skills easily and professionally."
+    }
+  }
+},
+
+
+
+
+"login": {
+  "title": "Login",
+  "verified": "Email verified successfully! You can log in now. ✅",
+  "email_placeholder": "Email",
+  "password_placeholder": "Password",
+  "button": "Sign in",
+  "error": "⚠️ An error occurred while logging in",
+  "forgot_password": "Forgot your password?",
+  "no_account": "Don't have an account? Create one now."
+},
+
+
+"register": {
+  "title": "Create an account",
+  "username_placeholder": "Username",
+  "email_placeholder": "Email",
+  "password_placeholder": "Password",
+  "submit_button": "Create my account",
+  "success_message": "✅ Account created successfully. Please check your email.",
+  "error_message": "⚠️ Registration failed",
+  "login_link": "Have an account? Log in"
+},
+
+
+
+ "ResetPassword": {
+  "title": "Set a new password",
+  "label": "Please enter your new password.",
+  "placeholder": "********",
+  "submit_button": "Save new password",
+  "success_message": "✅ Your password has been updated successfully.",
+  "error_message": "⚠️ An error occurred, please try again later."
+},
+
+
+
+
+
+
+
+"saved_templates": {
+    "title": "My saved templates",
+    "fetch_error": "Error fetching saved templates",
+    "confirm_title": "Confirm deletion",
+    "confirm_message": "Are you sure you want to delete this template?",
+    "delete_success": "Template deleted successfully",
+    "delete_error": "An error occurred while deleting",
+    "empty": "You haven't saved any template yet.",
+    "view_cv": "View Personal CV 🌐",
+    "edit-cv": "  Design modification"
+  },
+
+  "yes": "Yes",
+  "no": "No",
+  "loading": "Loading...⏳",
+  "delete": "Delete 🗑",
+  "deleting": "Deleting...",
+  "connection_failed": "Connection to server failed",
+
+
+"personal_cv": {
+  "loading": "Loading CV... ⏳",
+  "not_found": "⚠️ Template not found",
+  "title": "Personal CV",
+  "back_button": "⬅️ Back to Templates",
+  "share_button": "📤 Share CV",
+  "download_button": "⬇️ Download PDF",
+  "error_fetch": "An error occurred while fetching the template. Please try again later."
+},
+
+"profile": {
+  "subscription": {
+    "basic": "Free Basic Plan",
+    "pro": "Paid Pro Plan",
+    "premium": "Full Premium Plan",
+    "start": "Subscription starts: ",
+    "end": "Subscription ends: "
+  },
+  "title": "Profile",
+  "name": "Name:",
+  "email": "Email:",
+  "plan": "Plan:",
+  "security_title": "Security",
+  "change_password": "Change password",
+  "modal_title": "Change password",
+  "current_password": "Current Password:",
+  "new_password": "New Password:",
+  "cancel": "Cancel",
+  "submit": "Change password",
+  "success": "✅ Password changed successfully",
+  "error_wrong": "❌ The current password is incorrect.",
+  "error_general": "❌ An error occurred while changing the password"
+},
+
+
+
+
+
+  "referral": {
+    "title": "Referral Program",
+    "how_it_works": "How does the program work?",
+    "link": "Referral link",
+    "copy": "Copy",
+    "copied": "Copied",
+    "stats": "Referral statistics",
+    "registered": "Registered via your link",
+    "paid_subs": "Paid subscribers",
+    "total_earnings": "Total profits",
+    "withdraw_history": "Previous withdrawals",
+    "total_withdrawn": "Total Withdrawals",
+    "no_withdrawals": "There are no withdrawals yet.",
+    "history": "History",
+    "amount": "Amount",
+    "method": "Withdrawal method",
+    "status": "Status",
+    "available_balance": "Available balance for withdrawal",
+    "withdraw_now": "Withdraw Now",
+    "withdraw_min_note": "Balance must be $5 or more to withdraw.",
+    "withdraw_min_error": "🚫 The minimum withdrawal is $5."
+  },
+
+
+
+
+
+
+
+
+  
+  "referralInfo": {
+    "main_title": "How does the referral program work? 💡",
+    "main_subtitle": "Earn money or free credits easily by inviting your friends.",
+
+    "stages_title": "Steps of the program 📝",
+    "stage1_title": "Copy link",
+    "stage1_desc": "Copy your referral link easily from the program page.",
+    "stage2_title": "Share link",
+    "stage2_desc": "Share the link with your friends via WhatsApp or social media.",
+    "stage3_title": "Friend linked",
+    "stage3_desc": "Your friend will be automatically linked when registering with your link.",
+    "stage4_title": "Commission",
+    "stage4_desc": "You earn a commission after your friend subscribes to paid plans.",
+    "stage5_title": "Withdraw earnings",
+    "stage5_desc": "Once your earnings reach $5, you can withdraw them.",
+    "stage6_title": "After withdrawal",
+    "stage6_desc": "You can view all successful withdrawals here.",
+
+    "start_now": "Start Now 🚀",
+
+    "rewards_title": "What do you get? 🎁",
+    "rewards_text": "You receive<strong> 30% </strong> of every signup from people you refer. You can withdraw your earnings or use them to purchase site services.",
+
+    "conditions_title": "Program Conditions 📌",
+    "condition1": "✅ The referred person must be new and not registered before.",
+    "condition2": "❌ You cannot refer yourself or create fake accounts.",
+    "condition3": "🕒 Each transaction is reviewed before commission approval.",
+
+    "notes_title": "Important Notes 🔥",
+    "note1": "💡 The more referrals you have, the more you earn.",
+    "note2": "⚙️ The system works automatically, just share your link.",
+    "note3": "🚀 No limit to referrals — earn without restrictions!",
+
+    "withdraw_title": "How to withdraw profits",
+    "withdraw_text": "You can withdraw your earnings starting from <strong>5$ using</strong>  any of the following withdrawal methods:",
+    "withdraw_method_paypal": "PayPal",
+    "withdraw_method_bank": "Bank Transfer"
+  },
+
+
+
+"subscription": {
+  "welcome_title": "👋 Welcome back!",
+  "welcome_text": "💎 Discover subscription plans and benefit from unlimited benefits!",
+
+  "plans": {
+    "basic_title": "Free Basic Plan",
+    "basic_desc": "You can access a collection of free templates to create your resume.",
+    "basic_note": "For more professional templates, upgrade.",
+
+    "pro_title": "Paid Pro Plan",
+    "pro_desc": "Enjoy access to more professional features and advanced templates.",
+    "pro_note": "Thank you for subscribing!",
+
+    "premium_title": "Full Premium Plan",
+    "premium_desc": "All features without limits, exclusive templates and priority support.",
+    "premium_note": "Thank you for subscribing!"
+  },
+
+  "dates": {
+    "start": "Subscription starts:",
+    "end": "Subscription ends:"
+  },
+
+  "payment_methods_title": "Available payment methods",
+  "payment_methods_text": "We offer multiple payment options to ensure flexibility and ease of subscription.",
+
+  "methods": {
+    "paypal": "PayPal",
+    "visa": "Visa",
+    "mastercard": "MasterCard",
+    "bank": "Bank transfer"
+  },
+
+  "errors": {
+    "already_subscribed": " You are already subscribed to the \"{{plan}}\" plan and it has not expired yet."
+  }
+},
+
+
+
+"withdraw": {
+    "title": "💸 Profit Withdrawal",
+    "balance": "Available Balance: ",
+    "method_label": "Withdrawal method:",
+    "choose": "-- Choose --",
+    "paypal": "PayPal",
+    "bank": "Bank Transfer",
+    "paypal_email": "PayPal Email:",
+    "bank_account": "Bank Account Number:",
+    "bank_proof": "📄 Bank Statement (Image):",
+    "errors": {
+      "min_withdrawal": "🚫 The minimum withdrawal is 5$.",
+      "missing_fields": "Please select a method and fill in the required information.",
+      "upload_proof": "Please upload a bank statement image.",
+      "fetch_failed": "An error occurred while fetching your earnings.",
+      "withdraw_failed": "❌ Failed to process the withdrawal.",
+      "general_error": "❌ An error occurred while processing your request."
+    },
+    "success": {
+      "paypal": "✅ Your withdrawal request has been sent via PayPal.",
+      "bank": "✅ Your request has been submitted for manual review."
+    },
+    "button": {
+      "loading": "Processing...",
+      "confirm": "Confirm Withdrawal"
+    },
+    "note": "⏱️ It may take 1-3 business days for the transfer to complete."
+  },
+
+
+
+
+  "footer": {
+    "sections": {
+      "account": {
+        "title": "The account",
+        "links": {
+          "login": "Log in",
+          "register": "Register now"
+        }
+      },
+      "cvs": {
+        "title": "CVs",
+        "links": {
+          "home": "Home",
+          "create": "Create a CV",
+          "saved": "My saved designs",
+          "favorites": "Favorite templates"
+        }
+      },
+      "subscriptions": {
+        "title": "Subscriptions",
+        "links": {
+          "pricing": "Pricing"
+        }
+      },
+      "referrals": {
+        "title": "Referrals",
+        "links": {
+          "program": "Referral Program",
+          "info": "Referral information"
+        }
+      },
+      "help": {
+        "title": "Help",
+        "links": {
+          "about_site": "About the site",
+          "freelance": "About freelancing",
+          "contact": "Contact Us"
+        }
+      },
+      "about": {
+        "title": "About",
+        "links": {
+          "about_us": "About Us",
+         
+  "refund_policy": "Refund Policy",
+  "terms_of_service": "Terms of Service",
+  "privacy_policy": "Privacy Policy",
+  "referral_terms": "Referral Terms"
+ }
+
+        }
+      
+    },
+    "bottom": {
+      "rights": "All Rights Reserved",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn"
+      }
+    }
+  },
+
+
+
+
+  
+  "navbar": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "referral_info": "Referral information",
+    "about": "About Us",
+    "help": "Help ▾",
+    "help.freelance": "About freelancing",
+    "help.contact": "Contact Us",
+    "help.about_site": "About the site",
+    "referral_program": "Referral Program",
+    "create_cv": "Create a CV",
+    "profile": "Profile",
+    "signout": "Sign out",
+    "login": "Log in",
+    "register": "Register now",
+    "upgrade": "Upgrade to paid subscription",
+    "not_subscribed": "Not subscribed 🔒",
+    "editor": " Creating a CV",
+    "save-project": " My projects"
+    
+  },
+  "plans": {
+    "basic": "Basic",
+    "pro": "Pro",
+    "premium": "Premium"
+  },
+
+
+
+
+  
+  "pricing": {
+    "title": "Perfect fit for everyone",
+    "subtitle": "Choose the most suitable plan and start your journey towards a more professional experience and unlimited features.",
+
+   
+
+
+
+
+
+
+
+   "plans": {
+  "basic": {
+    "name": "Basic Plan - Free",
+    "button": "Free Plan",
+    "features": {
+      "templates_free": "Use templates (Basic) only",
+      "Number_projects": "Unlimited number of projects",
+      "templates_limited": "Standard PDF download quality",
+      "quick_customization": "Deep customization",
+      "create_cv": "No watermark (temporarily)",
+      "limited_pdf": "Cover letter",
+      "no_saving": "Number of saved projects: 1",
+      "customization_colors": "Unique link to share the project"
+    }
+  },
+  "pro": {
+    "name": "Pro – $2.99/month",
+    "button": "Subscribe to Pro",
+    "features": {
+      "use_templates": "Use templates (Basic + Pro) only",
+      "Number_projects_pro": "Unlimited number of projects",
+      "quick_customization": "HD PDF download quality",
+      "create_cv": "Deep customization",
+      "unlimited_pdf": "No watermark",
+      "save_designs": "Cover letter",
+      "customization_colors": "Number of saved projects: 5",
+      "professional_templates": "Unique link to share the project"
+    }
+  },
+  "premium": {
+    "name": "Premium – $4.99/month",
+    "button": "Subscribe to Premium",
+    "features": {
+      "all_templates": "Use templates (Basic + Pro + Premium)",
+      "Number_projects_premium": "Unlimited number of projects",
+      "most_professional": "Full HD PDF download quality",
+      "quick_customization": "Deep customization",
+      "create_cv": "No watermark",
+      "unlimited_pdf": "Cover letter",
+      "save_designs": "Unlimited number of saved projects",
+      "customization_colors": "Unique link to share the project"
+    }
+  }
+}
+
+
+
+  },
+
+
+
+  
+  "sidebar": {
+    "home": "Home",
+    "create_cv": "Create a CV",
+    "saved_designs": "My saved designs",
+    "favorite_templates": "Favorite templates",
+    "referral_program": "Referral Program",
+    "referral_info": "Referral information",
+    "profile": "Profile",
+    "about_site": "About the site"
+  },
+
+
+
+
+
+  
+  "landingPage": {
+    "hero": {
+      "title": "Welcome back! 👋",
+      "subtitle": "Create your CV easily and start your career professionally. Ready-made templates, elegant design, and direct export.",
+      "button": "Start free now 🚀"
+    },
+    "templatesSection": {
+      "title": "What will you design today?",
+      "subtitle": "Choose the type of CV or design that suits you from hundreds of ready-made templates and start customizing right away.",
+      "button": "Start creating now"
+    },
+    "videoHero": {
+      "title": "Design your CV easily and professionally",
+      "subtitle": "Create a CV that stands out in just a few steps, with no design skills required. Choose from professional templates, customize them as you like, then share or download instantly.",
+      "button": "Start free now 🚀",
+      "subEnd": "  Your browser does not support the video tag."
+    },
+    "whySection": {
+      "title": "A CV that sets you apart",
+      "subtitle": "Did you know that 7 out of 10 candidates get rejected because of an unprofessional CV? We’re here to change that. With CVFlow you can create a CV that grabs attention and reflects your skills in the best way possible.",
+      "bullets": [
+        "✅ Templates designed by recruitment experts",
+        "📄 Clean and well-structured design",
+        "🚀 Boost your chances of landing an interview"
+      ],
+      "button": "Create your CV now"
+    },
+    "referralSection": {
+      "title": "Earn with your friends",
+      "subtitle": "Share your referral link with your friends and earn rewards when they upgrade to a paid plan.",
+      "bullets": [
+        "🔗 Get your unique referral link",
+        "🎁 Earn 30% on every Pro or Premium subscription made through you",
+        "📈 Track sign-ups in your dashboard",
+        "💰 Withdraw your earnings anytime once you reach the $5 minimum payout"
+      ],
+      "buttons": {
+        "start": "Start referring now",
+        "learnMore": "Learn more"
+      }
+    },
+    "teamSection": {
+      "title": "👥 Meet our team",
+      "members": {
+        "me": { "name": "Abdelbasset El Hajiri", "role": "Founder & CEO" },
+        "sara": { "name": "Sara Khan", "role": "Head of Design" },
+        "mohamed": { "name": "Mohamed Ali", "role": "Lead Developer" }
+      }
+    },
+    "freelanceSection": {
+      "title": "What are you waiting for? Start your freelance journey now",
+      "freelance_intro": "Did you know that there are thousands of people who have great skills but lack the simplest thing to reach customers… <bold>Professional CV</bold>?<br /><br /> Many of them are not good at writing or designing their CVs in an attractive way, which prevents them from finding profitable freelance opportunities every day.<br /><br /> Here lies <bold>Your chance</bold>.<br /><br /> Using our simple tools and ready-made templates, you can easily create professional resumes for these people and offer them for a reasonable fee.<br /><br /> Imagine that every resume you design could open a new job for its owner – while opening up an additional source of ongoing income for you.<br /><br /> 💡 <bold>Start now, and invest your design and writing skills to create distinctive CVs and sell them to those who need them most.</bold>",
+      "buttons": {
+        "start": "Get started",
+        "learnMore": "Learn more"
+      }
+    },
+    "finalCta": {
+      "title": "Start designing with ",
+      "titleSpan": " CVFlow",
+      "button": "Start free now"
+    }
+  },
+
+
+
+
+  "editor": {
+
+ "toolbar": {
+   "undo": "Undo",
+  "redo": "Redo",
+  "exportPng": "Export PNG",
+  "exportSvg": "Export SVG",
+  "exportJpg": "Export JPG",
+  "exportPdf": "Export PDF",
+  "saveProject": "Save Project"
+  },
+
+
+  
+  "textToolbar": {
+    "searchPlaceholder": " Text",
+
+    "decreaseFont": "Decrease Font Size",
+    "increaseFont": "Increase Font Size",
+    "fontSize": "Font Size",
+    "duplicate": "Duplicate Element",
+    "flipX": "Flip Horizontally",
+    "opacity": "Opacity",
+    "textColor": "Text Color",
+    "backgroundColor": "Background Color",
+    "bold": "Bold",
+    "italic": "Italic",
+    "underline": "Underline",
+    "linethrough": "Strikethrough",
+    "toggleCase": "Toggle Upper/Lower Case",
+    "alignLeft": "Align Left",
+    "alignCenter": "Align Center",
+    "alignRight": "Align Right",
+    "alignJustify": "Justify Text",
+    "spacing": "Letter & Line Spacing",
+    "letterSpacing": "Letter Spacing",
+    "lineHeight": "Line Height",
+    "applyChanges": "Apply Changes",
+    "close": "Close",
+    "textTools": "Text Tools",
+    "delete": "Delete",
+    "radius": "Corner Radius",
+    "borderColor": "Border Color",
+    "borderWidth": "Border Width",
+    "crop": "Crop Image",
+    "fillColor": "Fill Color"
+   
+  },
+
+  "sidebarLeft": {
+      "addElements": "Add Elements",
+      "text": "Text",
+      "image": "Image",
+      "bulletedList": "Bulleted List",
+      "numberedList": "Numbered List",
+      "uploadImage": "Upload Image",
+      "textFormatting": "Text Formatting",
+      "font": "Font",
+      "textLabel": "Text",
+      "textPlaceholder": "Element text",
+      "generalFormatting": "🎨 General Formatting",
+      "fillColor": "Fill / Color",
+      "opacity": "Opacity",
+      "distributeX": "↔ Distribute Horizontally",
+      "distributeY": "↕ Distribute Vertically",
+      "bringForward": "Bring to Front",
+      "sendBackward": "Send to Back",
+      "flipX": "Flip",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "frameColor": "🎨 Frame Color",
+      "gradientSettings": "🌈 Gradient Settings",
+      "type": "Type",
+      "linear": "Linear",
+      "radial": "Radial",
+      "direction": "Direction",
+      "up": "Bottom to Top",
+      "down": "Top to Bottom",
+      "left": "Right to Left",
+      "right": "Left to Right",
+      "diagonal": "Diagonal",
+      "colors": "Colors",
+      "addColor": "+ Add Color",
+      "applyGradient": "Apply Gradient to Frame",
+      "layers": "Layers",
+      "layerImage": "Image",
+      "layerRect": "Rectangle",
+      "layerCircle": "Circle",
+      "layerText": "Text",
+      "select": "Select",
+      "moveUp": "Move Up",
+      "moveDown": "Move Down"
+    },
+
+    "rightPanel": {
+      "pageSettings": "Page Settings",
+      "background": "Background",
+      "width": "Width",
+      "height": "Height",
+      "applySize": "Apply Size",
+      "viewZoom": "View & Zoom",
+      "zoom": "Zoom In / Out",
+      "gridSimulation": "Grid Simulation",
+      "showGrid": "Show Grid",
+      "gridSize": "Grid Size (px)"
+     
+     
+    }
+
+  },
+
+
+  
+    "SectionsPanel": {
+  "toggle": {
+    "show": "Sections",
+    "hide": "Hide"
+  },
+
+  "sidebar": {
+    "title": " Sections",
+    "addShape": "Add Shape"
+  }
+},
+
+
+
+
+  "shapesPanel": {
+  "toggle": {
+    "show": "Shapes",
+    "hide": "Hide"
+  },
+
+  "sidebar": {
+    "title": " Shapes",
+    "addShape": "Add Shape"
+  }
+},
+
+
+
+ "iconSidebar": {
+  "toggle": {
+    "show": "Icons",
+    "hide": "Hide"
+  },
+  "searchPlaceholder": "Search for an icon..."
+
+ 
+},
+
+
+
+
+ "TemplateCard": {
+  "add_to_favorites": "Add to favorites",
+  "remove_from_favorites": "Remove from favorites",
+  "locked": "Locked",
+  "requires_plan": "Requires plan",
+  "login_required": "🔐 Login required",
+  "upgrade_required": "🔒 Upgrade required",
+  "open_template": "✏️ Open template"
+
+
+},
+
+
+
+
+"refund_policy": {
+  "title": "Refund Policy",
+  "last_update": "Last Update",
+  "intro": "We always strive to provide the best experience for our customers; however, certain circumstances may require a refund. Below are the policy details clearly and smoothly.",
+  "section1": {
+    "title": "Refund Request Conditions",
+    "item1": "The user is unable to access the service after payment.",
+    "item2": "The user does not receive the agreed-upon features.",
+    "item3": "A critical technical error occurs that prevents using the service."
+  },
+  "section2": {
+    "title": "Non-Eligible Cases",
+    "item1": "Actual use of the service.",
+    "item2": "Errors caused by improper use.",
+    "item3": "Expiration of the subscription period."
+  },
+  "section3": {
+    "title": "Refund Process",
+    "item1": "Your request will be reviewed within 3–7 business days.",
+    "item2": "You will be notified via email.",
+    "item3": "The amount will be refunded using the same original payment method."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "For any inquiry or refund request, contact us via email:"
+  }
+},
+
+
+
+"terms": {
+  "title": "Terms of Service",
+  "last_update": "Last Update",
+  "section1": {
+    "title": "Acceptance of Terms",
+    "text": "By using the website, you agree to all displayed terms and policies."
+  },
+  "section2": {
+    "title": "Permitted Use",
+    "item1": "Creating resumes.",
+    "item2": "Saving projects and templates.",
+    "item3": "Using account features."
+  },
+  "section3": {
+    "title": "Content and Ownership",
+    "item1": "All templates and designs are owned by the website.",
+    "item2": "Reselling templates without permission is prohibited."
+  },
+  "section4": {
+    "title": "User Account",
+    "text": "The user is responsible for maintaining their login data, and we reserve the right to suspend the account in case of suspicious activity."
+  },
+  "section5": {
+    "title": "Subscriptions and Payments",
+    "item1": "Payments are final after generating the resume.",
+    "item2": "Features may change according to updates."
+  },
+  "section6": {
+    "title": "Modifications",
+    "text": "The website reserves the right to modify the terms at any time with user notification."
+  }
+},
+
+
+
+"privacy": {
+  "title": "Privacy Policy",
+  "last_update": "Last Update",
+  "section1": {
+    "title": "Information We Collect",
+    "item1": "Email",
+    "item2": "Name",
+    "item3": "Files and templates",
+    "item4": "Login data"
+  },
+  "section2": {
+    "title": "How We Use the Data",
+    "item1": "Improving the user experience.",
+    "item2": "Saving projects.",
+    "item3": "Sending notifications."
+  },
+  "section3": {
+    "title": "Data Protection",
+    "text": "We use the latest security systems to prevent unauthorized access."
+  },
+  "section4": {
+    "title": "Data Sharing",
+    "item1": "Upon user request.",
+    "item2": "Only in legal cases."
+  },
+  "section5": {
+    "title": "Data Deletion",
+    "text": "The user has the right to delete their account and all of their data completely."
+  }
+},
+
+
+
+
+
+
+"referral_terms": {
+  "title": "Referral Program Terms",
+  "last_update": "Last Update",
+  "section1": {
+    "title": "How Referrals Work",
+    "item1": "The user receives a unique referral link.",
+    "item2": "Every new user who registers through the link is considered a referral."
+  },
+  "section2": {
+    "title": "Reward System",
+    "item1": "20% of the subscription value of each referred user.",
+    "item2": "Rewards are added to the balance or transferred as agreed."
+  },
+  "section3": {
+    "title": "Conditions",
+    "item1": "The referred user must be completely new.",
+    "item2": "Creating multiple accounts for the same person is prohibited.",
+    "item3": "Posting the referral link in misleading or illegal places is prohibited."
+  },
+  "section4": {
+    "title": "Program Violations",
+    "item1": "Fraud or suspected fraud.",
+    "item2": "Violation of the program terms."
+  }
+}
+
+
+
+}
+ 
+

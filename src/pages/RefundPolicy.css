@@ -1,0 +1,108 @@
+.refund-wrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #1e1e1e;
+  font-family: "Cairo", sans-serif;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Header */
+.refund-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header-icon {
+  font-size: 55px;
+  color: #4B7BE5;
+  margin-bottom: 10px;
+  animation: popIn 0.7s ease;
+}
+.refund-header h1 {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+.update-date {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Intro text */
+.intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  background: #f8f9fc;
+  padding: 20px 22px;
+  border-radius: 12px;
+  border-right: 4px solid #4B7BE5;
+  margin-bottom: 25px;
+}
+
+/* Cards */
+.policy-card {
+  background: #fff;
+  padding: 22px 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  animation: slideUp 0.7s ease;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon {
+  font-size: 22px;
+  color: #4B7BE5;
+}
+.success {
+  color: #28a745 !important;
+}
+.danger {
+  color: #dc3545 !important;
+}
+
+.card-list {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.card-list li {
+  padding: 8px 0;
+  font-size: 17px;
+}
+
+/* Contact special */
+.contact-card {
+  background: linear-gradient(135deg, #eef3ff, #fff);
+  border-left: 4px solid #4B7BE5;
+}
+
+/* ---------------------------------- */
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------------------------------- */
+/* Responsive */
+@media (max-width: 600px) {
+  .refund-header h1 { font-size: 28px; }
+  .policy-card { padding: 18px; }
+}

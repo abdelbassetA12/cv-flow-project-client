@@ -1,0 +1,798 @@
+
+
+    :root{--bg:#0f172a;--panel:#0b1220;--muted:#94a3b8;--accent:#06b6d4}
+ 
+   .editor-root   {margin:0;height:100vh;background:linear-gradient(180deg,#071024 0%, #07102a 100%);color:#fff;display:flex;flex-direction:column;
+  
+  
+  }
+ .editor-root header{
+      height:64px;
+      position: sticky;
+      top: 0;
+   
+
+      color: #fff;
+      display:flex;
+      align-items:center;
+      padding:5px 16px;
+      gap:12px;
+      background: #0f172a;
+      border-bottom:1px solid rgba(255,255,255,0.03);
+      z-index: 1001;
+
+    }
+
+    
+
+ header .brand{font-weight:800;font-size:18px}
+ .toolbar{display:flex;gap:8px;align-items:center}
+       button,select,input[type="color"]{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff;padding:8px;border-radius:6px;cursor:pointer}
+       button:hover{border-color:var(--accent)}
+ .app{flex:1;display:flex;gap:12px;}
+    .left-panel{
+      position: fixed;
+      
+      
+        inset-inline-start: 0; /* يشتغل RTL / LTR */
+      top: 65px;
+      z-index: 1000;
+      width:260px;
+     height: 100vh;
+     background: #0f172a;
+   
+      padding:12px 12px 80px;
+     
+      overflow: auto;
+    }
+
+    
+
+
+     .right-panel{
+       position: fixed;
+       display: flex;
+  flex-direction: column;
+  gap: 14px;
+ 
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+    
+     
+        inset-inline-end: 0; /* يشتغل RTL / LTR */
+      top: 65px;
+      z-index: 1000;
+      width:260px;
+       height: 100vh;
+      background: #0f172a;
+     
+      padding:12px;
+      overflow: auto;
+   
+    }
+    
+    .canvas-wrap{
+  flex:1;
+  display:flex;
+ width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: #0b1220;
+  overflow: auto; /* يسمح بالتمرير الكامل */
+  position: relative;
+
+
+  flex: 1;
+  overflow: auto;
+
+}
+
+    .stage{background:#fff;border-radius:6px;box-shadow:0 8px 30px rgba(2,6,23,0.7);}
+    .controls-group{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+    .mini-sidright{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+     
+      padding:6px 8px;font-size:13px
+    }
+
+
+    .lab-photo{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff;padding:8px;border-radius:6px;cursor:pointer}
+     .lab-photo:hover{border-color:var(--accent)}
+
+
+
+
+    .panel-title{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .layers-list{list-style:none;padding:0;margin:0}
+    .layers-list li{padding:6px;border-radius:6px;margin-bottom:6px;background:rgba(0,0,0,0.12);display:flex;justify-content:space-between;align-items:center}
+ 
+    input[type="range"]{width:120px}
+    label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    .row{display:flex;gap:8px}
+    .hidden{display:none}
+
+   
+
+
+
+
+
+    
+
+
+.toolbart {
+  position: fixed;
+   
+  
+  left: 50%;
+  top: 90px;
+    transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(22, 19, 19, 0.95);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: fit-content;
+  z-index: 10000000;
+}
+
+
+
+
+.toolbart button,
+.toolbart .color-button,
+.toolbart .bg-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f1a1a;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  transition: background 0.2s;
+}
+
+.toolbart button:hover,
+.toolbart .color-button:hover,
+.toolbart .bg-button:hover {
+  background: #918080;
+}
+
+.toolbart .font-size-input {
+  width: 50px;
+  height: 28px;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Tooltip styling */
+.toolbart .tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translate(-50%, 4px);
+  padding: 5px 8px;
+  background: #111;
+  color: #eee5e5;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  pointer-events: none;
+}
+
+.toolbart button:hover .tooltip,
+.toolbart .color-button:hover .tooltip,
+.toolbart .bg-button:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.panel {
+  background: #1e1f22;
+  color: #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: "Cairo", sans-serif;
+  max-width: 380px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.panel-title h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.panel-section {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.control-group {
+  margin-bottom: 12px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input[type="color"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.opacity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.opacity-control input[type="range"] {
+  flex: 1;
+  accent-color: #00bcd4;
+}
+
+
+
+
+.opacity-number {
+  position: relative;
+  display: inline-block;
+}
+
+.opacity-number input {
+  width: 70px;
+  text-align: right;
+  background: #2a2b2f;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 6px;
+  padding-right: 22px;   /* مساحة مريحة للرمز % */
+  font-size: 14px;
+  line-height: 1.4;
+
+}
+
+
+/* الرمز داخل الحقل */
+.opacity-number::after {
+  content: "%";
+  position: absolute;
+  right: 8px;           /* مسافة من الطرف */
+  top: 50%;
+  transform: translateY(-48%); /* تصحيح المحاذاة العمودية */
+  color: #aaa;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+
+/* إزالة الأسهم في كروم، إيدج، وسفاري */
+.opacity-number input::-webkit-inner-spin-button,
+.opacity-number input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.row-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.row-buttons button {
+  flex: 1;
+  background: #292b30;
+ 
+  color: #eee;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.row-buttons button:hover {
+  background: #3a3d42;
+}
+
+.gradient-controls h3 {
+  margin-bottom: 8px;
+  color: #ffcc80;
+}
+
+.gradient-controls select {
+  width: 100%;
+  padding: 6px;
+  background: #2b2d31;
+  border: 1px solid #444;
+  color: #eee;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.gradient-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.gradient-row input[type="number"] {
+  width: 60px;
+  background: #2a2b2f;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.add-color, .apply-gradient {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-color {
+  background: #3949ab;
+  color: #fff;
+}
+
+.apply-gradient {
+  background: #26a69a;
+  color: #fff;
+}
+
+.add-color:hover {
+  background: #5c6bc0;
+}
+
+.apply-gradient:hover {
+  background: #2bbbad;
+}
+
+
+
+
+
+
+
+
+.text-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #ccc;
+  font-size: 13px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.text-control label {
+  font-weight: 500;
+  color: #bbb;
+}
+
+.text-control .mini {
+  background: #2a2b2f;
+  border: 1px solid #3a3a3f;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.text-control .mini:focus {
+  border-color: #5a9bff;
+  box-shadow: 0 0 0 2px rgba(90, 155, 255, 0.2);
+}
+
+.text-control .mini::placeholder {
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين تنسيق لوحة إعدادات الصفحة فقط */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #0f172a;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.right-panel .panel-title {
+  font-size: 14px;
+  color: #06b6d4;
+  font-weight: 600;
+  margin: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 4px;
+}
+
+/* تنظيم كل قسم فرعي */
+.right-panel section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+/* الحقول والأزرار داخل الإعدادات */
+.right-panel input[type="number"],
+.right-panel input[type="color"],
+.right-panel input[type="range"],
+.right-panel input[type="checkbox"],
+.right-panel button.mini {
+  border-radius: 6px;
+}
+
+.right-panel input[type="number"],
+.right-panel input[type="color"] {
+  background: #1e2536;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.right-panel input[type="range"] {
+  accent-color: var(--accent);
+  width: 100%;
+}
+.right-panel button.mini {
+  background: #1e2536;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.right-panel button.mini:hover {
+  background: #06b6d4;
+  border-color: #06b6d4;
+  color: #fff;
+}
+
+/* المساعدة */
+.right-panel ul {
+  list-style: disc;
+  margin: 6px 18px;
+  color: #94a3b8;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.right-panel hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin: 6px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+  HEADER BASE STYLE
+**********************************/
+.editor-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 0 16px;
+ background: #0f172a;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.editor-header .brand {
+  font-size: 18px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button.mini {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.10);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+button.mini:hover {
+  border-color: #06b6d4;
+  background: rgba(255,255,255,0.05);
+}
+
+button.mini.save {
+  background: #06b6d4;
+  border-color: #06b6d4;
+}
+
+/*********************************
+  MOBILE MENU
+**********************************/
+
+.mobile-only { display: none; }
+
+/* زر الهامبرغر */
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+
+/* القائمة المنسدلة للهاتف */
+.mobile-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  
+  background: #0f172a;
+  width:100vw;
+  padding: 12px;
+  border-left: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu button {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+}
+
+.mobile-menu button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/*********************************
+  RESPONSIVE
+**********************************/
+
+
+/* زر فتح القوائم الجانبية */
+.panel-toggle {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.panel-toggle:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+
+
+
+
+/* شاشات أقل من 900px */
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+
+
+
+
+  .left-panel {
+    transform: translateX(-100%);
+    opacity: 0;
+    top: 50px;
+  }
+  .right-panel {
+    transform: translateX(100%);
+    opacity: 0;
+    top: 50px;
+  }
+  .left-panel.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .right-panel.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+   .mobile-only {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* شاشات صغيرة جدا */
+@media (max-width: 480px) {
+  .editor-header {
+    padding: 0 10px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+}

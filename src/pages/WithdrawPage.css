@@ -1,0 +1,120 @@
+/* ✅ تنسيق عام للصفحة */
+.withdraw-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Tajawal", sans-serif;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* ✅ العناوين والنصوص */
+.withdraw-container h1 {
+  color: #2ecc71;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+}
+
+.withdraw-container p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ✅ الحقول والأزرار */
+.withdraw-container select,
+.withdraw-container input[type="text"],
+.withdraw-container input[type="email"],
+.withdraw-container input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.withdraw-container button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.withdraw-container button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* ✅ الرسائل */
+.withdraw-container .error {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.withdraw-container .success {
+  color: #2ecc71;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 📱 استجابة للشاشات الصغيرة (هواتف) */
+@media (max-width: 768px) {
+  .withdraw-container {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .withdraw-container h1 {
+    font-size: 22px;
+  }
+
+  .withdraw-container p {
+    font-size: 16px;
+  }
+
+  .withdraw-container select,
+  .withdraw-container input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .withdraw-container button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+/* 📱 استجابة إضافية للشاشات الصغيرة جدًا (هواتف قديمة) */
+@media (max-width: 480px) {
+  .withdraw-container {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+  .withdraw-container h1 {
+    font-size: 20px;
+  }
+
+  .withdraw-container p {
+    font-size: 14px;
+  }
+
+  .withdraw-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

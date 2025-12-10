@@ -1,0 +1,199 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  background: #fefefe;
+  font-family: "Tajawal", sans-serif;
+}
+
+.checkout-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.checkout-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* 🧾 ملخص الاشتراك */
+.checkout-summary {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-summary h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-summary strong {
+  color: #2980b9;
+}
+
+.checkout-summary span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* 💰 طرق الدفع */
+.checkout-payment {
+  flex: 2;
+  min-width: 320px;
+}
+
+.checkout-payment h2 {
+  font-size: 20px;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+/* زر التحويل البنكي */
+.bank-transfer-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+ 
+   transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.bank-transfer-btn:hover {
+  background-color: #1e8449;
+}
+
+/* صندوق التحويل البنكي */
+.bank-transfer-box {
+  padding: 1.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  margin-bottom: 2rem;
+}
+
+.bank-transfer-box h3 {
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bank-info {
+  background-color: #eaf4fc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: #154360;
+  font-weight: bold;
+}
+
+/* رفع الصورة */
+.upload-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upload-section label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.upload-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.upload-section input:hover {
+  border-color: #2980b9;
+}
+
+.upload-success {
+  color: green;
+  margin-top: 1rem;
+}
+
+.review-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* PayPal */
+.paypal-btn-container {
+  margin-top: 2rem;
+}
+
+/* رسالة الخطأ */
+.checkout-error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+
+
+
+
+ @media (max-width: 768px) {
+    .checkout-container {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    .checkout-main {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    .checkout-summary, .checkout-payment {
+      min-width: 100% !important;
+    }
+    .checkout-summary h2, .checkout-payment h2 {
+      font-size: 18px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .checkout-container {
+      padding: 0.8rem;
+    }
+    h1 {
+      font-size: 22px !important;
+    }
+    button {
+      font-size: 15px !important;
+      padding: 10px !important;
+    }
+  }

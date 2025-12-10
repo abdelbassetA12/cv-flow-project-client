@@ -1,0 +1,79 @@
+.policy-wrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Cairo", sans-serif;
+  animation: fadeIn 0.7s ease;
+}
+
+/* Header */
+.policy-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header-icon {
+  font-size: 55px;
+  color: #4B7BE5;
+  margin-bottom: 10px;
+  animation: popIn 0.7s ease;
+}
+.policy-header h1 {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+.policy-date {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Cards */
+.policy-card {
+  background: #fff;
+  padding: 22px 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  animation: slideUp 0.6s ease;
+}
+
+.policy-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+.policy-text {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+
+.policy-list {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.policy-list li {
+  padding: 8px 0;
+  font-size: 17px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .policy-header h1 { font-size: 26px; }
+  .policy-card { padding: 18px; }
+}
