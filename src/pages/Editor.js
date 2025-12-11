@@ -49,6 +49,7 @@ export default function EditorApp(){
   const [menuOpen, setMenuOpen] = useState(false);
   const [leftOpen, setLeftOpen] = useState(false);
 const [rightOpen, setRightOpen] = useState(false);
+ const API_URL = process.env.REACT_APP_API_URL;  // ⬅️ هنا نقرأ env
 
 
 // إضافة ستايت للتحكم بالقائمة المنسدلة
@@ -199,7 +200,7 @@ async function saveProjectToDB(projectName) {
   const json = JSON.stringify(canvasRef.current.toJSON(extraPropsToSave));
 
   try {
-    const res = await fetch('http://localhost:5000/api/saved-projects', {
+    const res = await fetch(`${API_URL}/api/saved-projects`, {
       method: 'POST',
         credentials: "include", // 🔥 إرسال الكوكي تلقائيًا
       headers: {
