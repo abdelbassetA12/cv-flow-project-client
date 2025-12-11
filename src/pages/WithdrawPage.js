@@ -12,6 +12,7 @@ axios.defaults.withCredentials = true;
 
 function Withdraw({ user }) {
   const { t } = useTranslation();
+   const API_URL = process.env.REACT_APP_API_URL;
   const [earnings, setEarnings] = useState(0);
   const [method, setMethod] = useState("");
   const [accountInfo, setAccountInfo] = useState("");
