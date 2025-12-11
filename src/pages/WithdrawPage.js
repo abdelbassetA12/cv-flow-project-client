@@ -24,7 +24,7 @@ function Withdraw({ user }) {
     const fetchEarnings = async () => {
       try {
       
-        const res = await axios.get("http://localhost:5000/api/referral/my-earnings", {
+        const res = await axios.get(`${API_URL}/api/referral/my-earnings`, {
          
         });
         setEarnings(res.data.earnings);
@@ -61,8 +61,7 @@ function Withdraw({ user }) {
       setLoading(true);
 
       if (method === "paypal") {
-        const response = await axios.post(
-          "http://localhost:5000/api/withdraw",
+        const response = await axios.post(`${API_URL}/api/withdraw`,
           { method, accountInfo, amount: earnings },
         
         );
@@ -87,8 +86,7 @@ function Withdraw({ user }) {
         formData.append("amount", earnings);
         formData.append("bankProof", bankProof);
 
-        const response = await axios.post(
-          "http://localhost:5000/api/manual-withdrawals",
+        const response = await axios.post(`${API_URL}/api/manual-withdrawals`,
           formData,
           {
             headers: {

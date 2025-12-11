@@ -12,6 +12,7 @@ function SavedProjects() {
   const { t } = useTranslation();
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+   const API_URL = process.env.REACT_APP_API_URL;
   const [deletingId, setDeletingId] = useState(null);
  // const navigate = useNavigate();
 
@@ -35,7 +36,7 @@ function SavedProjects() {
     const fetchProjects = async () => {
     
       try {
-        const res = await fetch('http://localhost:5000/api/saved-projects/mine', {
+        const res = await fetch(`${API_URL}/api/saved-projects/mine`, {
          // headers: { Authorization: `Bearer ${token}` },
            method: 'GET',
   credentials: 'include', // 🔥 مهم جداً جداً
@@ -79,7 +80,7 @@ function SavedProjects() {
     setDeletingId(id);
     //const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/saved-projects/${id}`, {
+      const res = await fetch(`${API_URL}/api/saved-projects/${id}`, {
         method: 'DELETE',
          credentials: 'include', // 🔥 مهم جداً جداً
         

@@ -18,6 +18,7 @@ function ResetPassword() {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+   const API_URL = process.env.REACT_APP_API_URL;
     const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
@@ -26,7 +27,7 @@ function ResetPassword() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/reset-password', {
+      const res = await axios.post(`${API_URL}/api/auth/reset-password`, {
         token,
         newPassword: password,
       });
