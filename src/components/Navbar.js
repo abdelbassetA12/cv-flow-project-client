@@ -371,7 +371,7 @@ const Navbar = ({ user, onLogout }) => {
 };
 
 const styles = {
-  nav: {
+ /* nav: {
     position: 'sticky',
     top: '0',
     fontFamily: 'Tajawal, sans-serif',
@@ -383,7 +383,7 @@ const styles = {
     color: '#000',
     zIndex: 1000,
     boxShadow: '0 1px 5px rgba(0,0,0,0.1)',
-  },
+  },*/
   logo: {
     margin: 0,
     fontSize: '1.6rem',

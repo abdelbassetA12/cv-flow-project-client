@@ -47,6 +47,22 @@
 
 
 
+   nav {
+    position: sticky;
+    top: 0;
+    font-family: Tajawal, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px 30px;
+    color: #000;
+    z-index: 1000;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  }
+
+
+
 
 
 
@@ -76,7 +92,7 @@
   /* 🎯 كود خاص بالشاشات الصغيرة (الموبايل) */
 @media (max-width: 768px) {
    nav {
-    position: fixed ;
+    position: fixed;
     top: 0;
     width: 100%;
   
