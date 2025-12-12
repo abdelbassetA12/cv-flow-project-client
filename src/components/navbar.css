@@ -76,7 +76,7 @@
   /* 🎯 كود خاص بالشاشات الصغيرة (الموبايل) */
 @media (max-width: 768px) {
    nav {
-    position: sticky !important;
+    position: fixed ;
     top: 0;
     width: 100%;
   
