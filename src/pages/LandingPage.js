@@ -120,7 +120,7 @@ function LandingPage() {
  
 
   return (
-    <div style={{
+    <div className="landing-cont" style={{
        //fontFamily: 'Tajawal, sans-serif',
 
       overflowX: 'hidden',

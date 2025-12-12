@@ -118,6 +118,13 @@ button.scrollBtnStyleRight:focus {
 
 /* === للأجهزة اللوحية (tablet) === */
 @media (max-width: 768px) {
+
+
+
+  .landing-cont{
+    padding: 80px  0 0;
+
+  }
   .scrollBtnStyleLeft,
 .scrollBtnStyleRight {
   width: 40px !important;
